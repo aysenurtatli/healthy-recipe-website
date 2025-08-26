@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="mytheme" className="nunito.className">
+    <html lang="en" className="nunito.className">
       <body
         className={`bg-neutral-100`} 
       >
