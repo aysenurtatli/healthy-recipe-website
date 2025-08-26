@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="navbar flex justify-between bg-neutral-100 text-primary shadow-xs shadow-secondary/10 px-[15px] md:px-[30px] lg:px-[60px] py-[20px]">
+    <div className="flex items-center justify-between bg-neutral-100 text-primary shadow-xs shadow-secondary/10 px-[15px] md:px-[30px] lg:px-[60px] py-[20px]">
       <Link href={"/"}>
        <img src="/logo.svg" alt="logo" className='w-auto'/>
       </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
           ))}
       </nav>
       <Link href={"/recipes"}>
-       <button className='hidden lg:block btn btn-primary h-[52px] text-[20px] rounded-[10px]'>Browse recipes</button>
+       <button className='hidden lg:block bg-primary cursor-pointer text-white px-4 h-[52px] text-[20px] rounded-[10px]'>Browse recipes</button>
       </Link>
       <button
           className="lg:hidden p-2 bg-[#E0E6E3] w-10 h-10 flex items-center justify-center rounded-sm"
@@ -45,7 +45,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Link href={"/recipes"}>
-            <button className="btn btn-primary mt-2 rounded-[10px] h-[52px]">Browse recipes</button>
+            <button className="bg-primary cursor-pointer mt-2 text-white rounded-[10px] w-full h-[52px]">Browse recipes</button>
           </Link>
         </div>
       )}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Button'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
      </h1>
     </div>
       <p className='text-secondary font-medium text-xl mt-3 mb-10'>Discover eight quick, whole-food recipes that you can cook tonight—no processed junk, no guesswork.</p>
-      <Button btnText={"Start exploring"} />
+      <Link href={"/recipes"}>
+       <Button btnText={"Start exploring"} />
+      </Link>
     </header>
   )
 }

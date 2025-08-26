@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Button'
+import Link from 'next/link'
 
 const CallToAction = () => {
   return (
@@ -17,7 +18,9 @@ const CallToAction = () => {
     <p className="text-secondary text-xl mb-6">
       Hit the button, pick a recipe, and get dinner on the table—fast.
     </p>
-    <Button btnText={"Browse recipes"} />
+    <Link href={"/recipes"}>
+     <Button btnText={"Browse recipes"} />
+    </Link>
   </div>
   <img 
     src="/images/patterns/pattern-knife.svg" 
